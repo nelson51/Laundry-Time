@@ -1,0 +1,80 @@
+<body style="background-color: #FAFAD2;">
+<head> <title> UC Machines </title> </head>
+
+<head>
+<link rel="stylesheet" type="text/css" href="UC Machines.css">
+</head>
+
+<header id="heading"> 
+<h1 style="background-color:yellow;color:red;text-align:center;border: 1px solid black;"> UC Machines </h1>
+</header>
+
+<div id="top">
+	<button id="profileB" ><a href="Profile.html"><img id="pic" src="Profile.jpg" /></a></button>
+	
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">Area: <a href="UC Machines.html">Ursinus College - North</a></button>
+		<div id="myDropdown" class="dropdown-content">
+			<a href="#">Ursinus College - New</a>
+			<a href="#">Ursinus College - Reimert</a>
+			<a href="#">Ursinus College - Main Street</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	function deleteask(){
+	  if (confirm('Are you sure you want to logout?')){
+		return true;
+	  }else{
+		return false;
+	  }
+	}
+</script>
+
+
+<!--<div id="Area">
+	<button> <a href="UC Machines.html"> Ursinus College - North </a> </button>
+</div>-->
+
+
+<div id="Dashboard">
+	<button> <a href="Key.html"> Key </a></button>
+	<button> <a href="Live Feed.html"> Live Feed </a></button>
+	<button> <a href="Notifications.html"> Notifications</a> </button>
+</div>
+
+<p style="background-color:#7733ff;width:50%;color:white;text-align:center;font-size:50px;margin-top:0%;margin:0 auto;border:3px solid black;margin-top:1%;"> Profile </p>
+
+
+<div id="profile" style="margin-left:45%;margin-top:2%;">
+	<div id="fName" style="margin-top:1%;"><textarea name="text" cols="20" rows="1">First Name</textarea></div>
+	<div id="lName" style="margin-top:1%;"><textarea name="text" cols="20" rows="1">Last Name</textarea></div>
+	<div id="washerPref" style="margin-top:1%;"><textarea name="text" cols="20" rows="3">Enter Washer Preferences Here</textarea></div>
+	<div id="dryerPref" style="margin-top:1%;"><textarea name="text" cols="20" rows="3">Enter Dryer Preferences Here</textarea></div>
+	<button  style="margin-top:1%;"> <a href="UC Machines.html"> Save </a></button>
+</div>
+
+
+
+	<button style="margin-left:45%; margin-top: 2%; height: 50px; width: 100px;font-size:20px;"> <a href="SignIn.html" onclick="return deleteask();">Logout</a></button>
