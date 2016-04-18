@@ -39,17 +39,24 @@
 	height: 50px;
 	width:200px;
 	float:right;
+	position:bottom;
 }
 
 #Dashboard{
 	margin: 0 auto;
-	height: 30px;
-	width:230px;
-	margin-top:1%;
+	height: auto;
+	width:250px;
+	bottom:0;
+    text-align:center;
+	position:fixed;
+	border:2px solid black;
+	background-color:blue;
+	left:0;
+	right:0;
 }
 
 #WashDry{
-	height:400px;
+	height:450px;
 	width:40%;
 	margin:0 auto;
 }
@@ -189,12 +196,12 @@
 }
 
 #door{
-    position:absolute;
     width:100%;
-	height:30px;
-    bottom:0;
+	height:40px;
     text-align:center;
 	font-size: 75px;
+	margin-bottom:80px;
+	margin-top:-30px;
 }
 
 /* Dropdown Button */
@@ -252,7 +259,27 @@
 	font-size:40px;
 	text-align:center;
 	margin-top: 1%;
+	margin-bottom:60px;
 }
+
+#keyBannerBottom{
+	position:bottom;
+	width:100%;
+	height:30px;
+    bottom:0;
+    text-align:center;
+	font-size: 30px;
+	font-style:italic;
+}
+#keyBannerLeft{
+	float:left;
+	width:17%;
+	font-size: 30px;
+	font-style:italic;
+	text-align:center;
+	border:2px solid black;
+}
+
 #Header{
 	background-color: #7733ff;
     color: white;
@@ -274,6 +301,7 @@
 	width:500px;
 	margin:0 auto;
 	margin-top: 1%;
+	margin-bottom:60px;
 	text-align: center;
 }
 
