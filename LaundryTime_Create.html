@@ -3,7 +3,7 @@
 <head>
 	<meta name="description" content="An app to help with laundry">
 	<meta name="author" content="Dan Bekier, Gabe Gordon, Zach Kronicz">
-	<title>Welcome Page</title>
+	<title>Create Account</title>
 
 <style>
 .iPhone{
@@ -114,19 +114,22 @@
 	
 	`
 	<div class="Subtitle" style="text-align:center;font-size:30px;">
-		<b><div> Welcome to Laundry Time! </div></b>  	
+		<b><div> Create Account </div></b>  	
 		
-		<div> Please Log In or</div>
-		<div>Create your Account</div>
+		<div>Please fill out all account information</div>
 	
 	</div>
 	
-	<div class="Body" style="font-size:20px;"> 
-		<div style="margin-top:1%;">Enter Username: <textarea name="text" cols="20" rows="1"></textarea></div>
-		<div style="margin-top:1%;">Enter Password: <textarea name="text" cols="20" rows="1"></textarea></div> <br> 	
-		Remember Me <input type="checkbox"><br>
-		<button style="margin-left:45%;margin-top:2%;"><a href="LaundryTime_Home.html" > Sign In </a></button>
-		<button ><a href="LaundryTime_Create.html">Create Account</a></button>
+	<div class="Body" style="font-size:20px;text-align:center;"> 
+	<div id="fName" style="margin-top:1%;">First Name: <textarea name="text" cols="20" rows="1"></textarea></div>
+	<div id="lName" style="margin-top:1%;">Last Name: <textarea name="text" cols="20" rows="1"></textarea></div>
+	<div id="username" style="margin-top:1%;">Username: <textarea name="text" cols="20" rows="1"></textarea></div>
+	<div id="password" style="margin-top:1%;">Password: <textarea name="text" cols="20" rows="1"></textarea></div>
+	<div id="washerPref" style="margin-top:1%;">Enter Washer Preferences Here: <br><textarea name="text" cols="20" rows="3"></textarea></div>
+	<div id="dryerPref" style="margin-top:1%;">Enter Dryer Preferences Here: <br><textarea name="text" cols="20" rows="3"></textarea></div>
+	<button  style="margin-top:1%;"><a href="LaundryTime_Welcome.html"> Save </a> </button>
+	<button  style="margin-top:1%;"><a href="LaundryTime_Welcome.html"> Back </a> </button>
+	
 	
 	</div>
 	
