@@ -3,14 +3,14 @@
 <head>
 	<meta name="description" content="An app to help with laundry">
 	<meta name="author" content="Dan Bekier, Gabe Gordon, Zach Kronicz">
-	<title>Create Account</title>
+	<title>Profile</title>
 
 <style>
 .iPhone{
 	margin: auto;
 	width: 414px;
 	height: 736px;
-	background: #white;
+	background: #33ccff;
 	border: 1px solid black;
 }
 .Title{
@@ -20,23 +20,18 @@
 	background: #000099;
 	
 }
-.Profile{
-	margin: auto;
-	width: 414px;
-	height: 80px;
-	background: #008dff;
-}
 .Subtitle{
 	margin: auto;
 	width: 414px;
-	height: 130px;
+	height: 70px;
 	background: #ffffff;
 }
 .Body{
 	margin: auto;
 	width: 414px;
-	height: 482px;
+	height: 485px;
 	background: #ffffff;
+	border-bottom: 1px solid black;
 }
 .Dashboard{
 	margin: auto;
@@ -90,8 +85,8 @@
 .InnerBody{
 	margin: auto;
 	top: 2.5%;
-	width: 100%;
-	height: 97%;
+	width: 95%;
+	height: 95%;
 	position: relative;
 	overflow: auto;
 }
@@ -129,6 +124,7 @@
 	height: auto;
 	text-align:left;
 }
+
 </style>
 </head>
 <body>
@@ -146,26 +142,32 @@
 	</div>
 	
 	
-	`
-	<div class="Subtitle" style="text-align:center;font-size:30px;">
-		<b><div> Create Account </div></b>  	
-		
-		<div>Please fill out all account information</div>
+	<div class="Subtitle"> 
+		<div> Add Profile Picture </div>
 	
 	</div>
 	
 	<div class="Body" style="font-size:20px;text-align:center;"> 
-	<div class="InnerBody">
-		<div class="Home">
+		<div class="InnerBody">
+			<div class="Home">
 				<div class="MachinePopUp">
-										
-					<div id="fName" style="margin-top:1%;"><b>First Name:</b> <input type="text" cols="20" ></input></div>
-					<div id="lName" style="margin-top:1%;"><b>Last Name:</b> <input type="text" cols="20"></input></div>
-					<div id="uName" style="margin-top:1%;"><b>Username:</b> <input type="text" cols="20"></input></div>
-					<div id="pass" style="margin-top:1%;"><b>Password:</b> <input type="text" cols="20" ></input></div>
-					<div id="phone" style="margin-top:1%;"><b>Phone Number:</b> <input type="text" cols="20" placeholder="(###)-###-###"></input></div>
+					<div style="float:right;">
+						<a href="LaundryTime_Profile.html">
+							<img src="BX.png" alt="Close" style="width:25px;height:25px;">
+						</a>
+					</div>
+					
+					<div style="text-align:center;font-size: 25px;">
+						<b>Edit Profile</b>
+					</div>	
+					
+					<div id="fName" style="margin-top:1%;"><b>First Name:</b> <input type="text" cols="20" placeholder="Daniel"></input></div>
+					<div id="lName" style="margin-top:1%;"><b>Last Name:</b> <input type="text" cols="20" placeholder="Bekier"></input></div>
+					<div id="uName" style="margin-top:1%;"><b>Username:</b> <input type="text" cols="20" placeholder="DaBekier"></input></div>
+					<div id="pass" style="margin-top:1%;"><b>Password:</b> <input type="text" cols="20" placeholder="BLAHHH"></input></div>
+					<div id="phone" style="margin-top:1%;"><b>Phone Number:</b> <input type="text" cols="20" placeholder="(111)-222-3333"></input></div>
 					<b>Laundry Room:</b>
-						None Selected<br>
+						Ursinus College-Reimert<br>
 					<button  style="margin-top:1%;"><a href="LaundryTime_FindLaundryRoom.html"> Find A New Laundry Room </a> </button>
 					
 				
@@ -177,13 +179,13 @@
 				<input type="checkbox" name="WasherTemp" value="Hot/Cold"> Hot/Cold<br>
 				<input type="checkbox" name="WasherTemp" value="Warm/Warm"> Warm/Warm<br>
 				<input type="checkbox" name="WasherTemp" value="Warm/Cold"> Warm/Cold<br>
-				<input type="checkbox" name="WasherTemp" value="Cold/Cold" > Cold/Cold<br>
+				<input type="checkbox" name="WasherTemp" value="Cold/Cold" checked> Cold/Cold<br>
 				</div>
 			</div>
 			<div class="PeopleBox">
 			<b>Extra Rinse:</b><br>
 				<div class="PeopleBox">
-				<input type="checkbox" name="WasherRinse" value="On"> On<br>
+				<input type="checkbox" name="WasherRinse" value="On"checked> On<br>
 				<input type="checkbox" name="WasherRinse" value="Off"> Off<br>
 				</div>
 			</div>
@@ -191,7 +193,7 @@
 			<b>Cycle Selection:</b><br>
 				<div class="PeopleBox">
 				<input type="checkbox" name="WasherCycle" value="Off"> Off<br>
-				<input type="checkbox" name="WasherCycle" value="Regular"> Regular<br>
+				<input type="checkbox" name="WasherCycle" value="Regular"checked> Regular<br>
 				<input type="checkbox" name="WasherCycle" value="PermPress"> Permant Press<br>
 				<input type="checkbox" name="WasherCycle" value="Delicate"> Delicate<br>
 				<input type="checkbox" name="WasherCycle" value="RinseSpin"> Rinse & Spin<br>
@@ -204,7 +206,7 @@
 			<div class="PeopleBox">
 			<b>Fabric Selector:</b></br>
 				<div class="PeopleBox">
-				<input type="checkbox" name="DryerFabric" value="Regular"> Regular<br>
+				<input type="checkbox" name="DryerFabric" value="Regular"checked> Regular<br>
 				<input type="checkbox" name="DryerFabric" value="Delicate"> Delicate<br>
 				<input type="checkbox" name="DryerFabric" value="NoHeat"> No Heat<br>
 				</div>
@@ -212,7 +214,7 @@
 			<div class="PeopleBox">
 			<b>Time Dry (in minutes):</b></br>
 				<div class="PeopleBox">
-				<input type="checkbox" name="DryerTime" value="70"> 70<br>
+				<input type="checkbox" name="DryerTime" value="70"checked> 70<br>
 				<input type="checkbox" name="DryerTime" value="60"> 60<br>
 				<input type="checkbox" name="DryerTime" value="50"> 50<br>
 				<input type="checkbox" name="DryerTime" value="40"> 40<br>
@@ -228,7 +230,7 @@
 			<div class="PeopleBox">
 			<b>Push Notifications:</b></br>
 				<div class="PeopleBox">
-				<input type="checkbox" name="push" value="on"> On<br>
+				<input type="checkbox" name="push" value="on"checked> On<br>
 				<input type="checkbox" name="push" value="off"> Off<br>
 				<br>
 				</div>
@@ -241,7 +243,7 @@
 							<input type="checkbox" name="repeat" value="2"> 2<br>
 							<input type="checkbox" name="repeat" value="3"> 3<br>
 							<input type="checkbox" name="repeat" value="4"> 4<br>
-							<input type="checkbox" name="repeat" value="5"> 5<br>
+							<input type="checkbox" name="repeat" value="5"checked> 5<br>
 							<input type="checkbox" name="repeat" value="10"> 10<br>
 							<br>
 						</div>
@@ -249,16 +251,16 @@
 				</div>
 						<div class="ConfirmationBottomBar">
 							<div style="display: inline-block; font-size: 20px; text-align: center; width: 49%;">
-								<a href="LaundryTime_Welcome.html" style="text-decoration: none; color: black; font-size: 35px;">
+								<a href="LaundryTime_Profile.html" style="text-decoration: none; color: black; font-size: 35px;">
 								<div style="border: 1px solid black; background: #000099; color:white;">
-								<b>Create</b>
+								<b>Save</b>
 								</div>
 								</a>
 							</div>
 							<div style="display: inline-block; font-size: 20px; text-align: center; width: 49%; ">
-								<a href="LaundryTime_Welcome.html" style="text-decoration: none; color: black; font-size: 35px;">
+								<a href="LaundryTime_Profile.html" style="text-decoration: none; color: black; font-size: 35px;">
 								<div style="border: 1px solid black; background: #000099; color:white;">
-								<b>Back</b>
+								<b>Cancel</b>
 								</div>
 								</a>
 							</div>
@@ -268,11 +270,18 @@
 		
 				</div>
 			</div>
-	
-	
-	</div>
+		</div>
 	</div>
 	
+		
+	
+	<div class="Dashboard"> 
+		<div class="NotSelected"> <a href="LaundryTime_LiveFeed.html"><img src="WVideo.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
+		<div class="NotSelected"> <a href="LaundryTime_MyLaundry.html"><img src="WWash.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
+		<div class="NotSelected"> <a href="LaundryTime_Home.html"><img src="WHome.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
+		<div class="NotSelected"> <a href="LaundryTime_Notifications.html"><img src="WNotification.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
+		<div class="NotSelected"> <a href="LaundryTime_Help.html"><img src="WHelp.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
+	</div>
 </div>
 </body>
 </html>

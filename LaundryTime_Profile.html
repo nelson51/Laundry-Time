@@ -20,22 +20,16 @@
 	background: #000099;
 	
 }
-.Profile{
-	margin: auto;
-	width: 414px;
-	height: 80px;
-	background: #008dff;
-}
 .Subtitle{
 	margin: auto;
 	width: 414px;
-	height: 50px;
+	height: 70px;
 	background: #ffffff;
 }
 .Body{
 	margin: auto;
 	width: 414px;
-	height: 425px;
+	height: 485px;
 	background: #ffffff;
 	border-bottom: 1px solid black;
 }
@@ -94,6 +88,41 @@
 	width: 95%;
 	height: 95%;
 	position: relative;
+	overflow: auto;
+}
+
+.MachinePopUp{
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	background: #008dff;
+	
+}
+.Home{
+	margin: auto;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	overflow: auto;
+}
+.ConfirmationText{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	font-size: 25px;
+	text-align: center;
+}
+.ConfirmationBottomBar{
+	width: 100%;
+	height: 12%;
+	background: #008dff;
+	border-top: 1px solid black;
+}
+.PeopleBox{
+	margin: auto;
+	width: 85%;
+	height: auto;
+	text-align:left;
 }
 
 </style>
@@ -113,39 +142,74 @@
 	</div>
 	
 	
-	<div class="Profile"> 
-		<div class="Pside">
-			<a href="LaundryTime_Profile.html"><img  align="left" hspace="12" src="AC.png"  width="76" height="76" ></a>
-		</div>
-		<div class="UserName">
-			<img src="UserName.png"  width="175" height="60" hspace="25" vspace="15" align="left">
-		</div>
-		<div class="Pside">
-			<a href="LaundryTime_Welcome.html"><img  align="left" hspace="12" src="LO.png"  width="76" height="76" ></a>
-		</div>
-	</div>
-	
 	<div class="Subtitle"> 
 		<div> Add Profile Picture </div>
 	
 	</div>
 	
 	<div class="Body" style="font-size:20px;text-align:center;"> 
-		<div id="fName" style="margin-top:1%;"><textarea name="text" cols="20" rows="1">First Name</textarea></div>
-		<div id="lName" style="margin-top:1%;"><textarea name="text" cols="20" rows="1">Last Name</textarea></div>
-		<div id="washerPref" style="margin-top:1%;"><textarea name="text" cols="20" rows="3">Enter Washer Preferences Here</textarea></div>
-		<div id="dryerPref" style="margin-top:1%;"><textarea name="text" cols="20" rows="3">Enter Dryer Preferences Here</textarea></div>
-		<button  style="margin-top:1%;"> <a href="UC Machines.html"> Save </a></button>
+		<div class="InnerBody">
+			<div class="Home">
+				<div class="MachinePopUp">
+				
+			<b>First Name:</b> Daniel <br>
+			<b>Last Name:</b> Bekier <br>
+			<b>UserName:</b> DaBekier <br>
+			<b>Password:</b> BLAHHH <br>
+			<b>Phone Number:</b> (111)-222-3333<br>
+			<br>
+			<b>Laundry Room:</b>
+				Ursinus College-Reimert<br>
+			
+			<div class="PeopleBox">
+			</br><b><u>Washer Preferences:</u></b></br>
+				<div class="PeopleBox">
+				<b>Temperature:</b> Cold/Cold<br>
+				<b>Rinse:</b> On<br>
+				<b>Cycle Selection:</b> Regular<br>
+				<br>
+				</div>
+			</div>
+			<div class="PeopleBox">
+			<b><u>Dryer Preferences:</u></b></br>
+				<div class="PeopleBox">
+				<b>Fabric Selector:</b> Regular</br>
+				<b>Time Dry (in minutes):</b> 70</br>
+				</br>
+				</div>
+			</div>
+			<div class="PeopleBox">	
+			<b><u>Notification Preferences:</u></b> <br>
+				<div class="PeopleBox">
+				<b>Push Notificaitons:</b> On <br>
+				<b>Repeat Once After:</b> 5 mins<br><br>
+				</div>
+			</div>
+				
+			<div class="ConfirmationBottomBar">
+							<div style="display: inline-block; font-size: 20px; text-align: center; width: 99%;">
+								<a href="LaundryTime_ProfileEdit.html" style="text-decoration: none; color: black; font-size: 35px;">
+								<div style="border: 1px solid black; background: #000099; color:white;">
+								<b>Edit</b>
+								</div>
+								</a>
+							</div>
+						</div>
+			
+		</div>
 	
+	</div>
+	</div>
 	</div>
 	
 	<div class="Dashboard"> 
 		<div class="NotSelected"> <a href="LaundryTime_LiveFeed.html"><img src="WVideo.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
 		<div class="NotSelected"> <a href="LaundryTime_MyLaundry.html"><img src="WWash.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
-		<div class="Selected"> <a href="LaundryTime_Home.html"><img src="BHome.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
+		<div class="NotSelected"> <a href="LaundryTime_Home.html"><img src="WHome.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
 		<div class="NotSelected"> <a href="LaundryTime_Notifications.html"><img src="WNotification.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
 		<div class="NotSelected"> <a href="LaundryTime_Help.html"><img src="WHelp.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
 	</div>
+	
 </div>
 </body>
 </html>

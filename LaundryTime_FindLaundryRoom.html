@@ -3,14 +3,14 @@
 <head>
 	<meta name="description" content="An app to help with laundry">
 	<meta name="author" content="Dan Bekier, Gabe Gordon, Zach Kronicz">
-	<title>Dryer1</title>
+	<title>Create Account</title>
 
 <style>
 .iPhone{
 	margin: auto;
 	width: 414px;
 	height: 736px;
-	background: #33ccff;
+	background: white;
 	border: 1px solid black;
 }
 .Title{
@@ -19,6 +19,12 @@
 	height: 100px;
 	background: #000099;
 	
+}
+.Profile{
+	margin: auto;
+	width: 414px;
+	height: 80px;
+	background: #008dff;
 }
 .Subtitle{
 	margin: auto;
@@ -29,9 +35,8 @@
 .Body{
 	margin: auto;
 	width: 414px;
-	height: 485px;
+	height: auto;
 	background: #ffffff;
-	border-bottom: 1px solid black;
 }
 .Dashboard{
 	margin: auto;
@@ -89,6 +94,7 @@
 	height: 95%;
 	position: relative;
 }
+
 .MachinePopUp{
 	margin: auto;
 	width: 90%;
@@ -99,14 +105,29 @@
 .Home{
 	margin: auto;
 	width: 100%;
-	height: 100%;
+	height: auto;
+	text-align: center;
 	overflow: auto;
 }
-.Button{
-	text-align:center;
-	font-size:25px;
+.ConfirmationText{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	font-size: 25px;
+	text-align: center;
 }
-
+.ConfirmationBottomBar{
+	width: 100%;
+	height: 12%;
+	background: #008dff;
+	border-top: 1px solid black;
+}
+.PeopleBox{
+	margin: auto;
+	width: 85%;
+	height: auto;
+	text-align:left;
+}
 </style>
 </head>
 <body>
@@ -123,52 +144,52 @@
 		</div>
 	</div>
 	
-	<div class="Subtitle"> 
 	
-		<img  align="left" hspace="108" src="Home.png"  width="198" height="48" >
+	`
+	<div class="Subtitle" style="text-align:center;">
+		<div>Create your Account</div>
+	
 	</div>
-	<div class="Body"> 
+	
+	<div class="Body" style="font-size:20px;"> 
 		<div class="InnerBody">
 			<div class="Home">
 				<div class="MachinePopUp">
 					<div style="float:right;">
-						<a href="LaundryTime_Home.html">
+						<a href="LaundryTime_Create.html">
 							<img src="BX.png" alt="Close" style="width:25px;height:25px;">
 						</a>
 					</div>
-					<div style="text-align: center; font-size: 35px;">
-						<b>Dryer1</b>
-					</div>
-					<div style="text-align: center; font-size: 25px;">
-						Area: Reimert
-					</div>
-					<div style="text-align: center; font-size: 25px;">
-						Status: In Use
-					</div>
-					<div style="text-align: center; font-size: 25px;">
-						Time Remaining: 04:48
-					</div>
-					<div style="text-align: center; font-size: 25px;">
-						Used By: Gabe Gordon
-					</div>
-					<div class="Button">
-						<a href="LaundryTime_Confirmation4.html" style="text-decoration: none; color: black">
-							<div style="border: 1px solid black; background: #000099; color:white;">
-								Report Dryer1
+					
+					<div style="text-align:center;font-size: 25px;">
+						<b>Add A Laundry Room</b>
+					</div>	
+					</br>
+					<div id="sID" style="margin-top:1%;"><b>School ID:</b> <input type="text" cols="20"></input></div></br>
+					<div id="sPass" style="margin-top:1%;"><b>School Password:</b> <input type="text" cols="20"></input></div></br>
+					<div id="lID" style="margin-top:1%;"><b>Laundry Room ID:</b> <input type="text" cols="20"></input></div></br>
+					
+					<div class="ConfirmationBottomBar">
+							<div style="display: inline-block; font-size: 20px; text-align: center; width: 49%;">
+								<a href="LaundryTime_Welcome.html" style="text-decoration: none; color: black; font-size: 35px;">
+								<div style="border: 1px solid black; background: #000099; color:white;">
+								<b>Add Room</b>
+								</div>
+								</a>
 							</div>
-						</a>
-					</div>
+							<div style="display: inline-block; font-size: 20px; text-align: center; width: 49%; ">
+								<a href="LaundryTime_Welcome.html" style="text-decoration: none; color: black; font-size: 35px;">
+								<div style="border: 1px solid black; background: #000099; color:white;">
+								<b>Back</b>
+								</div>
+								</a>
+							</div>
+						</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
-	<div class="Dashboard"> 
-		<div class="NotSelected"> <a href="LaundryTime_LiveFeed.html"><img src="WVideo.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
-		<div class="NotSelected"> <a href="LaundryTime_MyLaundry.html"><img src="WWash.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
-		<div class="Selected"> <a href="LaundryTime_Home.html"><img src="BHome.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
-		<div class="NotSelected"> <a href="LaundryTime_Notifications.html"><img src="WNotification.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
-		<div class="NotSelected"> <a href="LaundryTime_Help.html"><img src="WHelp.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
-	</div>
+	
 </div>
 </body>
 </html>

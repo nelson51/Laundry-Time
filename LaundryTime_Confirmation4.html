@@ -3,7 +3,7 @@
 <head>
 	<meta name="description" content="An app to help with laundry">
 	<meta name="author" content="Dan Bekier, Gabe Gordon, Zach Kronicz">
-	<title>Dryer1</title>
+	<title>Confirm</title>
 
 <style>
 .iPhone{
@@ -99,12 +99,22 @@
 .Home{
 	margin: auto;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	overflow: auto;
 }
-.Button{
-	text-align:center;
-	font-size:25px;
+.ConfirmationText{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	font-size: 25px;
+	text-align: center;
+}
+.ConfirmationBottomBar{
+	width: 100%;
+	height: 12%;
+	background: #008dff;
+	border-top: 1px solid black;
+	
 }
 
 </style>
@@ -123,9 +133,10 @@
 		</div>
 	</div>
 	
-	<div class="Subtitle"> 
 	
+	<div class="Subtitle"> 
 		<img  align="left" hspace="108" src="Home.png"  width="198" height="48" >
+	
 	</div>
 	<div class="Body"> 
 		<div class="InnerBody">
@@ -136,27 +147,29 @@
 							<img src="BX.png" alt="Close" style="width:25px;height:25px;">
 						</a>
 					</div>
-					<div style="text-align: center; font-size: 35px;">
-						<b>Dryer1</b>
-					</div>
-					<div style="text-align: center; font-size: 25px;">
-						Area: Reimert
-					</div>
-					<div style="text-align: center; font-size: 25px;">
-						Status: In Use
-					</div>
-					<div style="text-align: center; font-size: 25px;">
-						Time Remaining: 04:48
-					</div>
-					<div style="text-align: center; font-size: 25px;">
-						Used By: Gabe Gordon
-					</div>
-					<div class="Button">
-						<a href="LaundryTime_Confirmation4.html" style="text-decoration: none; color: black">
-							<div style="border: 1px solid black; background: #000099; color:white;">
-								Report Dryer1
+					<div style="text-align:center;font-size: 25px;">
+						<b>Confirmation</b>
+					</div>	
+					
+					<div class="ConfirmationText">
+						Are you sure you really want to Report this machine?
+						
+						<div class="ConfirmationBottomBar">
+							<div style="display: inline-block; font-size: 20px; text-align: center; width: 49%;">
+								<a href="LaundryTime_Report.html" style="text-decoration: none; color: black; font-size: 35px;">
+								<div style="border: 1px solid black; background: #000099; color:white;">
+								<b>Yes</b>
+								</div>
+								</a>
 							</div>
-						</a>
+							<div style="display: inline-block; font-size: 20px; text-align: center; width: 49%; ">
+								<a href="LaundryTime_Home.html" style="text-decoration: none; color: black; font-size: 35px;">
+								<div style="border: 1px solid black; background: #000099; color:white;">
+								<b>Cancel</b>
+								</div>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
