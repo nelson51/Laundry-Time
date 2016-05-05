@@ -10,7 +10,7 @@
 	margin: auto;
 	width: 414px;
 	height: 736px;
-	background: #33ccff;
+	background: #000099;
 	border: 1px solid black;
 }
 .Title{
@@ -31,7 +31,7 @@
 	width: 414px;
 	height: 485px;
 	background: #ffffff;
-	border-bottom: 1px solid black;
+	
 }
 .Dashboard{
 	margin: auto;
@@ -56,7 +56,7 @@
 }
 .Laundry{
 	margin: auto;
-	width: 153px;
+	width: 105px;
 	height: 100px;
 	background: #000099;
 	display: inline-block;
@@ -77,9 +77,9 @@
 }
 .Pside{
 	margin: auto;
-	width: 96px;
-	height: 80px;
-	background: #008dff;
+	width: 80px;
+	height: 90px;
+	background: #000099;
 	display: inline-block;
 }
 .InnerBody{
@@ -131,19 +131,22 @@
 <div class="iPhone">
 	<div class="Title"> 
 		<div class="Laundry">
-			<img src="Laundry.png" hspace="5" width="100" height="90" align="right">
+			<img src="Laundry.png" hspace="5" width="100" height="90" align="left">
 		</div>
 		<div class="Logo">
-				<img src="LogoV2.png"  width="90" height="90" vspace="5" hspace="5">
+				<img src="LogoV2.png"  width="90" height="90" vspace="5" hspace="5" align="left">
 		</div>
 		<div class="Laundry">
 			<img src="Time.png"  width="100" height="100" align="left">
+		</div>
+		<div class="Pside">
+			<a href="LaundryTime_Profile.html"><img  align="left" hspace="12" vspace="0" src="AC.png"  width="70" height="70" ></a>
 		</div>
 	</div>
 	
 	
 	<div class="Subtitle"> 
-		<div> Add Profile Picture </div>
+		<img  align="left" hspace="108" src="Profile.png"  width="198" height="48" >
 	
 	</div>
 	
@@ -168,7 +171,15 @@
 					<div id="phone" style="margin-top:1%;"><b>Phone Number:</b> <input type="text" cols="20" placeholder="(111)-222-3333"></input></div>
 					<b>Laundry Room:</b>
 						Ursinus College-Reimert<br>
-					<button  style="margin-top:1%;"><a href="LaundryTime_FindLaundryRoom.html"> Find A New Laundry Room </a> </button>
+					<div class="ConfirmationBottomBar">
+							<div style="display: inline-block; font-size: 20px; text-align: center; width: 99%;">
+								<a href="LaundryTime_FindLaundryRoom.html" style="text-decoration: none; color: black; font-size: 35px;">
+								<div style="border: 1px solid black; background: #000099; color:white;">
+								<b>Edit Laundry Room</b>
+								</div>
+								</a>
+							</div>
+						</div>
 					
 				
 		<div class="PeopleBox">
@@ -276,11 +287,11 @@
 		
 	
 	<div class="Dashboard"> 
-		<div class="NotSelected"> <a href="LaundryTime_LiveFeed.html"><img src="WVideo.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
-		<div class="NotSelected"> <a href="LaundryTime_MyLaundry.html"><img src="WWash.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
-		<div class="NotSelected"> <a href="LaundryTime_Home.html"><img src="WHome.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
-		<div class="NotSelected"> <a href="LaundryTime_Notifications.html"><img src="WNotification.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
-		<div class="NotSelected"> <a href="LaundryTime_Help.html"><img src="WHelp.png"  width="81" height="78" hspace="0" vspace="0" align="left"> </a></div>
+		<div class="NotSelected"> <a href="LaundryTime_LiveFeed.html"><img src="WVideo.png"  width="60" height="60" hspace="11" vspace="9" align="left"> </a></div>
+		<div class="NotSelected"> <a href="LaundryTime_MyLaundry.html"><img src="WWash.png"  width="60" height="60" hspace="11" vspace="9" align="left"> </a></div>
+		<div class="NotSelected"> <a href="LaundryTime_Home.html"><img src="WHome.png"  width="60" height="60" hspace="11" vspace="9" align="left"> </a></div>
+		<div class="NotSelected"> <a href="LaundryTime_Notifications.html"><img src="WNotification.png"  width="60" height="60" hspace="11" vspace="9" align="left"> </a></div>
+		<div class="NotSelected"> <a href="LaundryTime_Help.html"><img src="WHelp.png"  width="60" height="60" hspace="11" vspace="9" align="left"> </a></div>
 	</div>
 </div>
 </body>
